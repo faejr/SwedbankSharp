@@ -7,8 +7,8 @@
     <ProjectGuid>{C3FEC303-FCA5-4DF1-9F0F-6DA9D992BEC1}</ProjectGuid>
     <OutputType>Exe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Swegbank</RootNamespace>
-    <AssemblyName>Swegbank</AssemblyName>
+    <RootNamespace>Example</RootNamespace>
+    <AssemblyName>Example</AssemblyName>
     <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />

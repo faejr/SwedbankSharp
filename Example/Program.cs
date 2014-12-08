@@ -4,7 +4,7 @@ using System.Text;
 using System.Net;
 using SwedbankSharp;
 
-namespace Swegbank
+namespace Example
 {
     class Program
     {
