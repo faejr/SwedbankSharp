@@ -22,13 +22,6 @@ namespace SwedbankSharp.JsonSchemas
         public string amount { get; set; }
     }
 
-    public class QuickbalanceSubscription
-    {
-        public string id { get; set; }
-        public bool active { get; set; }
-        public Links links { get; set; }
-    }
-
     public class Account
     {
         public string availableAmount { get; set; }

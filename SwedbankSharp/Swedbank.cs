@@ -11,8 +11,8 @@ namespace SwedbankSharp
     {
 
         private string s_baseUri = "https://auth.api.swedbank.se/TDE_DAP_Portal_REST_WEB/api/v1/";
-        private string s_appID = "HithYAGrzi8fu73j";
-        private string s_useragent = "SwedbankMOBPrivateIOS/3.9.0_(iOS;_8.0.2)_Apple/iPhone5,2";
+        private string s_appID;
+        private string s_useragent;
         private string s_authKey;
         private string s_dsid;
         private string s_selectedProfileID;
@@ -286,7 +286,7 @@ namespace SwedbankSharp
         {
             SelectProfile();
 
-            return SimpleJson.DeserializeObject<JsonSchemas.Reminders>("message/reminders");
+            return SimpleJson.DeserializeObject<JsonSchemas.Reminders>(GetRequest("message/reminders"));
         }
 
         /// <summary>
@@ -297,7 +297,40 @@ namespace SwedbankSharp
         {
             SelectProfile();
 
-            return SimpleJson.DeserializeObject<JsonSchemas.BaseInfo>("transfer/baseinfo");
+            return SimpleJson.DeserializeObject<JsonSchemas.BaseInfo>(GetRequest("transfer/baseinfo"));
+        }
+
+
+        /// <summary>
+        /// Get QuickBalanceAccounts
+        /// </summary>
+        /// <returns>List of accounts with quickbalance info</returns>
+        public JsonSchemas.QuickBalanceAccounts QuickBalanceAccounts()
+        {
+            SelectProfile();
+
+            return SimpleJson.DeserializeObject<JsonSchemas.QuickBalanceAccounts>(GetRequest("quickbalance/accounts"));
+        }
+
+        /// <summary>
+        /// Returns the subscription id for quickbalance
+        /// </summary>
+        /// <param name="accountSubId"></param>
+        /// <returns></returns>
+        public string GetQuickBalanceSubscriptionId(string accountSubId)
+        {
+            JsonSchemas.QuickBalanceSubscriptionObject obj = SimpleJson.DeserializeObject<JsonSchemas.QuickBalanceSubscriptionObject>(PostRequest("quickbalance/subscription/"+accountSubId, null));
+            return obj.subscriptionId;
+        }
+
+        /// <summary>
+        /// Displays the quickbalance using given subscription id
+        /// </summary>
+        /// <param name="quickBalanceSubscriptionId"></param>
+        /// <returns></returns>
+        public JsonSchemas.QuickBalance QuickBalance(string quickBalanceSubscriptionId)
+        {
+            return SimpleJson.DeserializeObject<JsonSchemas.QuickBalance>(GetRequest("quickbalance/"+quickBalanceSubscriptionId));
         }
 
         /// <summary>

@@ -47,6 +47,9 @@
     <Compile Include="BankType.cs" />
     <Compile Include="JsonSchemas\BaseInfo.cs" />
     <Compile Include="JsonSchemas\Profile.cs" />
+    <Compile Include="JsonSchemas\QuickBalance.cs" />
+    <Compile Include="JsonSchemas\QuickBalanceAccounts.cs" />
+    <Compile Include="JsonSchemas\QuickBalanceSubscriptionObject.cs" />
     <Compile Include="JsonSchemas\Reminders.cs" />
     <Compile Include="JsonSchemas\TransactionQuery.cs" />
     <Compile Include="JsonSchemas\Transactions.cs" />
