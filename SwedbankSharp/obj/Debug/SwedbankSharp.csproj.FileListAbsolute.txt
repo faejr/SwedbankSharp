@@ -1,0 +1,7 @@
+C:\Users\Babycakes\documents\visual studio 2013\Projects\Swegbank\SwedbankSharp\obj\Debug\SwedbankSharp.csprojResolveAssemblyReference.cache
+C:\Users\Babycakes\documents\visual studio 2013\Projects\Swegbank\SwedbankSharp\bin\Debug\SwedbankSharp.dll
+C:\Users\Babycakes\documents\visual studio 2013\Projects\Swegbank\SwedbankSharp\bin\Debug\SwedbankSharp.pdb
+C:\Users\Babycakes\documents\visual studio 2013\Projects\Swegbank\SwedbankSharp\bin\Debug\RestSharp.dll
+C:\Users\Babycakes\documents\visual studio 2013\Projects\Swegbank\SwedbankSharp\bin\Debug\RestSharp.xml
+C:\Users\Babycakes\documents\visual studio 2013\Projects\Swegbank\SwedbankSharp\obj\Debug\SwedbankSharp.dll
+C:\Users\Babycakes\documents\visual studio 2013\Projects\Swegbank\SwedbankSharp\obj\Debug\SwedbankSharp.pdb
