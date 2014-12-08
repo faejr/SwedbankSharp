@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
 VisualStudioVersion = 12.0.31101.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Swegbank\Example.csproj", "{C3FEC303-FCA5-4DF1-9F0F-6DA9D992BEC1}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Example", "Example\Example.csproj", "{C3FEC303-FCA5-4DF1-9F0F-6DA9D992BEC1}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SwedbankSharp", "SwedbankSharp\SwedbankSharp.csproj", "{F1040869-0DC1-4557-9322-86FBEBA5E0E0}"
 EndProject
