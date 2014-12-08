@@ -42,6 +42,23 @@ namespace Example
             Console.WriteLine("Account Name: " + t.account.name);
             Console.WriteLine("Account Balance: " + t.account.balance + t.account.currency);
 
+            //Quickbalance stuff
+            Console.WriteLine("\nRetrieving accounts for quickbalance...");
+            SwedbankSharp.JsonSchemas.QuickBalanceAccounts acc = client.QuickBalanceAccounts();
+            int j = 1;
+            foreach (SwedbankSharp.JsonSchemas.QbAccount qba in acc.accounts)
+            {
+                Console.WriteLine(j + ". " + qba.name);
+                j++;
+            }
+            Console.Write("Choose account to subscribe to: ");
+            int nos = ReadKey();
+            Console.WriteLine("\nSubscribing...");
+            string qbs = client.GetQuickBalanceSubscriptionId(acc.accounts[nos-1].quickbalanceSubscription.id);
+            Console.WriteLine("Subscription ID: "+qbs);
+            SwedbankSharp.JsonSchemas.QuickBalance qb = client.QuickBalance(qbs);
+            Console.WriteLine("Quickbalance: "+qb.balance);
+            
             client.Terminate();
 
             Console.WriteLine("\nPress any key to exit...");
