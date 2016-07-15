@@ -19,7 +19,7 @@ namespace SwedbankSharp.JsonSchemas
         public List<Account> accounts { get; set; }
     }
 
-    public class Account2
+    public class BaseInfoAccount
     {
         public string balance { get; set; }
         public string name { get; set; }
@@ -35,7 +35,7 @@ namespace SwedbankSharp.JsonSchemas
     {
         public string name { get; set; }
         public string groupId { get; set; }
-        public List<Account2> accounts { get; set; }
+        public List<BaseInfoAccount> accounts { get; set; }
     }
 
     public class NotAllowedMessage

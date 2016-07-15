@@ -1,42 +1,39 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace SwedbankSharp.JsonSchemas
 {
     public class Overview
     {
-        public List<BankAccount> transactionAccounts { get; set; }
-        public List<BankAccount> transactionDisposalAccounts { get; set; }
-        public List<BankAccount> loanAccounts { get; set; }
-        public List<BankAccount> savingAccounts { get; set; }
-        public List<BankAccount> cardAccounts { get; set; }
-        public CardCredit cardCredit { get; set; }
+        public List<BankAccount> TransactionAccounts { get; set; }
+        public List<BankAccount> TransactionDisposalAccounts { get; set; }
+        public List<BankAccount> LoanAccounts { get; set; }
+        public List<BankAccount> SavingAccounts { get; set; }
+        public List<BankAccount> CardAccounts { get; set; }
+        public CardCredit CardCredit { get; set; }
     }
 
     public class BankAccount
     {
-        public bool selectedForQuickbalance { get; set; }
-        public Links links { get; set; }
-        public string name { get; set; }
-        public string id { get; set; }
-        public string currency { get; set; }
-        public string accountNumber { get; set; }
-        public string clearingNumber { get; set; }
-        public string balance { get; set; }
-        public string fullyFormattedNumber { get; set; }
+        public bool SelectedForQuickbalance { get; set; }
+        public Links Links { get; set; }
+        public string Name { get; set; }
+        public string Id { get; set; }
+        public string Currency { get; set; }
+        public string AccountNumber { get; set; }
+        public string ClearingNumber { get; set; }
+        public string Balance { get; set; }
+        public string FullyFormattedNumber { get; set; }
     }
 
     public class Next2
     {
-        public string method { get; set; }
-        public string uri { get; set; }
+        public string Method { get; set; }
+        public string Uri { get; set; }
     }
 
     public class Links2
     {
-        public Next2 next { get; set; }
+        public Next2 Next { get; set; }
     }
 
     public class CardCredit

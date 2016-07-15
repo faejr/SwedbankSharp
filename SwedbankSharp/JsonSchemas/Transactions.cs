@@ -3,45 +3,44 @@ using System.Collections.Generic;
 
 namespace SwedbankSharp.JsonSchemas
 {
-    public class Transactions
+    public class TransactionList
     {
-        public List<Transaction> transactions { get; set; }
-        public Account account { get; set; }
-        public int numberOfTransactions { get; set; }
-        public List<ReservedTransaction> reservedTransactions { get; set; }
-        public int numberOfReservedTransactions { get; set; }
-        public bool moreTransactionsAvailable { get; set; }
-        public Links2 links { get; set; }
+        public List<Transaction> Transactions { get; set; }
+        public Account Account { get; set; }
+        public int NumberOfTransactions { get; set; }
+        public List<ReservedTransaction> ReservedTransactions { get; set; }
+        public int NumberOfReservedTransactions { get; set; }
+        public bool MoreTransactionsAvailable { get; set; }
+        public Links2 Links { get; set; }
     }
 
     public class Transaction
     {
-        public string date { get; set; }
-        public string description { get; set; }
-        public string currency { get; set; }
-        public string amount { get; set; }
+        public string Date { get; set; }
+        public string Description { get; set; }
+        public string Currency { get; set; }
+        public string Amount { get; set; }
     }
 
     public class Account
     {
-        public string availableAmount { get; set; }
-        public string creditGranted { get; set; }
-        public QuickbalanceSubscription quickbalanceSubscription { get; set; }
-        public string name { get; set; }
-        public string id { get; set; }
-        public string currency { get; set; }
-        public string accountNumber { get; set; }
-        public string clearingNumber { get; set; }
-        public string balance { get; set; }
-        public string fullyFormattedNumber { get; set; }
+        public string AvailableAmount { get; set; }
+        public string CreditGranted { get; set; }
+        public QuickbalanceSubscription QuickbalanceSubscription { get; set; }
+        public string Name { get; set; }
+        public string Id { get; set; }
+        public string Currency { get; set; }
+        public string AccountNumber { get; set; }
+        public string ClearingNumber { get; set; }
+        public string Balance { get; set; }
+        public string FullyFormattedNumber { get; set; }
     }
 
     public class ReservedTransaction
     {
-        public string date { get; set; }
-        public string description { get; set; }
-        public string currency { get; set; }
-        public string amount { get; set; }
+        public string Date { get; set; }
+        public string Description { get; set; }
+        public string Currency { get; set; }
+        public string Amount { get; set; }
     }
-
 }

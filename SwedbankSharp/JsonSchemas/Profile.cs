@@ -5,44 +5,44 @@ namespace SwedbankSharp.JsonSchemas
 {
     public class Profile
     {
-        public string userId { get; set; }
-        public bool hasSwedbankProfile { get; set; }
-        public bool hasSavingbankProfile { get; set; }
-        public List<Bank> banks { get; set; }
+        public string UserId { get; set; }
+        public bool HasSwedbankProfile { get; set; }
+        public bool HasSavingbankProfile { get; set; }
+        public List<Bank> Banks { get; set; }
     }
 
     public class Next
     {
-        public string method { get; set; }
-        public string uri { get; set; }
+        public string Method { get; set; }
+        public string Uri { get; set; }
     }
 
     public class Edit
     {
-        public string method { get; set; }
-        public string uri { get; set; }
+        public string Method { get; set; }
+        public string Uri { get; set; }
     }
 
     public class Links
     {
-        public Next next { get; set; }
-        public Edit edit { get; set; }
+        public Next Next { get; set; }
+        public Edit Edit { get; set; }
     }
 
     public class PrivateProfile
     {
-        public string id { get; set; }
-        public string bankId { get; set; }
-        public string customerName { get; set; }
-        public string customerNumber { get; set; }
-        public Links links { get; set; }
+        public string Id { get; set; }
+        public string BankId { get; set; }
+        public string CustomerName { get; set; }
+        public string CustomerNumber { get; set; }
+        public Links Links { get; set; }
     }
 
     public class Bank
     {
-        public string name { get; set; }
-        public string bankId { get; set; }
-        public PrivateProfile privateProfile { get; set; }
-        public List<object> corporateProfiles { get; set; }
+        public string Name { get; set; }
+        public string BankId { get; set; }
+        public PrivateProfile PrivateProfile { get; set; }
+        public List<object> CorporateProfiles { get; set; }
     }
 }
