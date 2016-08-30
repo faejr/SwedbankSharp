@@ -7,11 +7,8 @@ namespace SwedbankSharp.JsonSchemas
 {
     public class PersonalCode
     {
-
         public bool PersonalCodeChangeRequired { get; set; }
         public string ServerTime { get; set; }
-        public Links links { get; set; }
-
+        public Links Links { get; set; }
     }
-
 }

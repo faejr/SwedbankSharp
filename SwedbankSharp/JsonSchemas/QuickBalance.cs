@@ -7,9 +7,9 @@ namespace SwedbankSharp.JsonSchemas
 {
     public class QuickBalance
     {
-        public string currency { get; set; }
-        public string balance { get; set; }
-        public bool balanceForCustomer { get; set; }
-        public bool remindersExists { get; set; }
+        public string Currency { get; set; }
+        public string Balance { get; set; }
+        public bool BalanceForCustomer { get; set; }
+        public bool RemindersExists { get; set; }
     }
 }

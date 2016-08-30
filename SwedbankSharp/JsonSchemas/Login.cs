@@ -5,12 +5,8 @@ namespace SwedbankSharp.JsonSchemas
 {
     public class Login
     {
-
-        public bool useEasyLogin {get; set;}
-        public string password { get; set; }
-        public bool generateEasyLoginId { get; set; }
-        public long userId { get; set; }
-
+        public bool UseEasyLogin {get; set;}
+        public bool GenerateEasyLoginId { get; set; }
+        public long UserId { get; set; }
     }
-
 }

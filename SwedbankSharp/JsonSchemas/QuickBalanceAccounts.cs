@@ -7,25 +7,25 @@ namespace SwedbankSharp.JsonSchemas
 {
     public class QuickBalanceAccounts
     {
-        public List<QbAccount> accounts { get; set; }
+        public List<QbAccount> Accounts { get; set; }
     }
 
     public class QuickbalanceSubscription
     {
-        public string id { get; set; }
-        public bool active { get; set; }
-        public Links links { get; set; }
+        public string Id { get; set; }
+        public bool Active { get; set; }
+        public Links Links { get; set; }
     }
 
     public class QbAccount
     {
-        public string name { get; set; }
-        public string currency { get; set; }
-        public string accountNumber { get; set; }
-        public string clearingNumber { get; set; }
-        public string balance { get; set; }
-        public string fullyFormattedNumber { get; set; }
-        public QuickbalanceSubscription quickbalanceSubscription { get; set; }
+        public string Name { get; set; }
+        public string Currency { get; set; }
+        public string AccountNumber { get; set; }
+        public string ClearingNumber { get; set; }
+        public string Balance { get; set; }
+        public string FullyFormattedNumber { get; set; }
+        public QuickbalanceSubscription QuickbalanceSubscription { get; set; }
     }
 
 }
