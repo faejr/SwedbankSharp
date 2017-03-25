@@ -37,15 +37,6 @@ namespace SwedbankSharp
             return transactionListList;
         }
 
-        public async Task<JsonSchemas.TransactionList> GetAccountTransactionListAsync(string accountId)
-        {
-            VerifyProfileIsSet();
-
-            JsonSchemas.TransactionList transactionListList = await _requester.GetAsync<JsonSchemas.TransactionList>("engagement/transactions/" + accountId);
-
-            return transactionListList;
-        }
-
         public async Task SetProfileForSessionAsync(string profileId)
         {
             var response = await _requester.PostAsync("profile/" + profileId);
