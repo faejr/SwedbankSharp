@@ -16,7 +16,7 @@ namespace SwedbankSharp
         private readonly HttpClient _client;
         private readonly CookieContainer _cookieContainer = new CookieContainer();
 
-        private readonly string _baseUri = "https://auth.api.swedbank.se/TDE_DAP_Portal_REST_WEB/api/v4/";
+        private readonly string _baseUri = "https://auth.api.swedbank.se/TDE_DAP_Portal_REST_WEB/api/v5/";
 
         public SwedbankRequester(string authKey, string dsid, string userAgent)
         {
